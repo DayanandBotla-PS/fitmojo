@@ -1,0 +1,57 @@
+
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;height: 100%;
+    background:rgba(black, .7);
+    &.blurbg::after{
+        content: '';
+        position: absolute;
+        filter:blur(2px);
+        width: 100%;
+        height: 100%;
+    }
+
+    &__body{
+        width: 80%;
+        height: 80%;
+        max-width: 800px;
+        background: #FFFFFF;
+    }
+}
+
+
+.btn-1{
+    background: #33d9b2;
+    color: #218c74;
+    box-shadow:  5px 15px #33d9b2;
+}
+
+
+.btn-2{
+    background:#706fd3;
+    color: #474787;
+    box-shadow:  5px 15px #706fd3;
+}
+.cta-wrap{
+    display: flex;
+    padding: 8px;
+    background: rgba(black, .7);
+    button{
+        width: 100%;
+        border-radius: 12px;
+        padding: 8px 12px;
+        font-size: 14px;
+    }
+
+    button + button{
+        margin-left: 16px;
+    }
+
+
+}
